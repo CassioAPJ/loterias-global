@@ -1,0 +1,136 @@
+﻿(function () {
+    "use strict";
+    angular.module('app.utils')
+        .directive('modal', function () {
+            return {
+                restrict: 'EA',
+                scope: true,
+                templateUrl: '_common/js/app/view/directives/shared/modal.html',
+                controller: function ($scope, $element) {
+
+                    $scope.showRightButton = function () {
+                        return $.isFunction($scope.callbackbuttonright);
+                    };
+
+                    $scope.showLeftButton = function () {
+                        return $.isFunction($scope.callbackbuttonleft);
+                    };
+
+                    $scope.showCloseButton = function () {
+                        return $scope.closebutton;
+                    };
+
+                },
+                link: function ($scope, el, attr) {
+
+                    $scope.id = 'modal';
+                    $scope.class = '',
+                        $scope.title = 'Modal title';
+                    $scope.header = false;
+                    $scope.icon = '';
+                    $scope.body = 'No body set';
+                    $scope.footer = false;
+                    $scope.footer_text = false;
+                    $scope.backdrop = true;
+                    $scope.closebutton = true;
+                    $scope.buttonlefttype = 'default';
+                    $scope.buttonrighttype = 'primary';
+                    $scope.buttonlefttext = 'left btn';
+                    $scope.buttonrighttext = 'right btn';
+                    $scope.buttonclosetext = 'Fechar';
+
+
+                    var options = $scope.$eval(attr.options);
+                    var isUnique = false;
+                    angular.forEach(options, function (item, key) {
+                        if (key === 'id' && item.indexOf('{LOTERIA}') > -1) {
+                            item = item.replace('{LOTERIA}', attr.loteria);
+                            isUnique = true;
+                        }
+                        $scope[key] = item;
+                    });
+
+                    if ($scope.icon) {
+                        $scope.icon = 'glyphicon ' + $scope.icon;
+                    }
+
+                    $scope.has_template = ($scope.body.indexOf('/') > -1);
+                    $scope.has_header = $scope.header !== false;
+                    $scope.has_footer = $scope.footer !== false;
+
+                    el.bind('show.bs.modal', function (e) {
+                        var ev;
+                        if (!isUnique) {
+                            ev = 'show.bs.modal.' + $scope.id;
+                            $scope.$emit(ev, e);
+                        } else {
+                            ev = 'show.bs.modal.unique';
+
+                            $scope.$emit(ev, e, $scope.id);
+                        }
+
+                    });
+
+                    el.bind('shown.bs.modal', function (e) {
+                        var ev;
+                        if (!isUnique) {
+                            ev = 'shown.bs.modal.' + $scope.id;
+                            $scope.$emit(ev, e);
+                        } else {
+                            ev = 'shown.bs.modal.unique';
+                            $scope.$emit(ev, e, $scope.id);
+                        }
+                    });
+
+                    el.bind('hide.bs.modal', function (e) {
+                        var ev;
+                        if (!isUnique) {
+                            ev = 'hide.bs.modal.' + $scope.id;
+                            $scope.$emit(ev, e);
+                        } else {
+                            ev = 'hide.bs.modal.unique';
+                            $scope.$emit(ev, e, $scope.id);
+                        }
+                    });
+
+                    el.bind('hidden.bs.modal', function (e) {
+                        var ev;
+                        if (!isUnique) {
+                            ev = 'hidden.bs.modal.' + $scope.id;
+                            $scope.$emit(ev, e);
+                        } else {
+                            ev = 'hidden.bs.modal.unique';
+                            $scope.$emit(ev, e, $scope.id);
+                        }
+                    });
+
+
+                    el.removeAttr('options');
+                    delete attr.options;
+
+                }
+            };
+        })
+        .directive('modalTrigger', function () {
+            return {
+                restrict: 'EA',
+                scope: {
+                    modalId: '@id',
+                    modalTarget: '@target',
+                    modalClass: '@class',
+                    modalText: '@text'
+                },
+                template: '<a href="#" ' +
+                    'id="trigger_{{modalId}}" ' +
+                    'data-target="\#{{modalTarget}}" ' +
+                    'class="{{modalClass}}" ' +
+                    'role="button" ' +
+                    'data-toggle="modal">' +
+                    '{{modalText}}' +
+                    '</a>',
+                controller: function ($scope, $element) {
+                    //console.log($element);
+                }
+            };
+        });
+}).call(this);
