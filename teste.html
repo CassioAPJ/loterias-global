@@ -3,8 +3,17 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel=preload as=style
+        href="//fonts.googleapis.com/css?family=Nunito:300,400,500,600,700,800&subset=cyrillic&display=swap"
+        crossOrigin=anonymous>
+    <link rel=preload as=style href="./assets/styleclone.css">
+    <link rel=preload as=script href="./assets/main.bundle.js">
     <link rel=stylesheet href="./assets/styleclone.css" media=all>
-    <title>Resultados</title>
+    <link rel=stylesheet crossOrigin=anonymous
+        href="https//fonts.googleapis.com/css?family=Nunito:300,400,500,600,700,800&subset=cyrillic&display=swap"
+        media=all>
+    <script type=application/ld+json>{ }</script>
+    <title>HOME</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +29,7 @@
                 <div class="topnav-1">
                     <ul>
                         <li>
-                            <a href="">BOLÃO LOTERIAS GLOBAL 2023 </a>
+                            <a href=""> SEJA BEM VINDO AO BOLÃO LOTERIAS GLOBAL 2023 </a>
                         </li>
                     </ul>
                 </div>
@@ -43,6 +52,12 @@
                     <li>
                         <a href="resultados.html">RESULTADOS</a>
                     </li>
+                    <li>
+                        <a href="simulador.html">SIMULADOR MEGA SENA</a>
+                    </li>
+<!--                     <li>
+                        <a href="teste.html">TESTE</a>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -66,13 +81,35 @@
                     <nav class=lotbar data-vue=lotbar>
                         <lotbar lottery=null></lotbar>
                     </nav>
+                    <section class=breadcrumbs>
+                        <div class=container>
+                            <div class=row>
+                                <div class=col-12>
+                                    <ul itemScope itemType=https://schema.org/BreadcrumbList>
+                                        <li itemProp=itemListElement itemScope itemType=https://schema.org/ListItem><a
+                                                itemProp=item href=https://www.megaloterias.com.br /><span><i
+                                                    class="fa fa-home"></i></span> <span itemProp=name
+                                                class=d-none>Home</span>
+                                            <meta itemProp=position content=1>
+                                            </a>
+                                        </li>
+                                        <li itemProp=itemListElement itemScope itemType=https://schema.org/ListItem><a
+                                                itemProp=item href=https://www.megaloterias.com.br/loterias><span
+                                                    itemProp=name>Loterias</span>
+                                                <meta itemProp=position content=2>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <div class=container>
                         <div class=row>
                             <div class=col-12>
                                 <header class=lotteries-header>
                                     <div class=lotteries-header__text>
-                                        <h1>Conheça tudo sobre as Loterias!</h1> 
-                                         
+                                        <h1>Conheça tudo sobre as Loterias!</h1>
+                                            
                                         <p class=lotteries-header__description>Apostar nas principais loterias do Brasil
                                             pode
                                             ser muito fácil e seguro. Através do Loterias Global, o segundo maior site de apostas
@@ -91,7 +128,7 @@
                                     <div class=text-center>
                                         <h2 class=lottery-totem__header__title>Estatísticas da Mega-Sena</h2>
                                         <p>Estatísticas não são garantia de prêmio, mas mostram tendências que podem
-                                            ajudar o apostador a escolher como apostar na Mega-Sena.<br>O Loterias Global
+                                            ajudar o apostador a escolher como apostar na Mega-Sena.<br>O Mega Loterias
                                             separou uma série delas para você saber quais os números mais sorteados, por
                                             exemplo, e algumas curiosidades! A seguir, confira e prepare-se para
                                             apostar!</p>
@@ -218,234 +255,6 @@
                                 </div>
                             </section>
                 </section>
-                <section class=lotteries-list__wrap>
-                    <div class="container lot-list">
-                        <div class=row>
-                            <div class=col-12>
-                                <div class=site-anchor id=mega-sena></div>
-                                <section class="lottery-totem lot-mega-sena">
-                                    <header class=lottery-totem__header>
-                                        <div class=lottery-totem__header-grid>
-                                            <div>
-                                                <h2 class=lottery-totem__header__title><a class=--lottery-hyperlink
-                                                        href=/mega-sena>Mega-Sena</a></h2>
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </header>
-                                    <div class=lottery-totem__modules-grid>
-                                        <div class=lottery-totem__body>
-                                            <div class="lottery-totem__body__content card">
-                                                <p>A loteria que paga milhões para o acertador dos seis números sorteados.
-                                                    Sorteios às quartas e aos sábados. Quanto mais números, maiores são as
-                                                    chances de faturar o prêmio mais cobiçado do país.</p>
-                                                <h3>Veja abaixo algumas informações sobre a Mega-Sena:</h3>
-                                                <div class=lottery-totem__grid-lot-info>
-                                                    <div
-                                                        class="lottery-totem__lot-info-card lottery-totem__lot-info-card--draw">
-                                                        <div class="icon icon--schedule"><span class=lot-bg>Sorteio</span>
-                                                        </div>
-                                                        <h4 class=title>Sorteio</h4>
-                                                        <div class=content>
-                                                            <div class="day text-uppercase">Quarta-Feira</div>
-                                                            <div class="day text-uppercase">Sábado</div>
-                                                            <div class=time>Sempre às 20:00</div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="lottery-totem__lot-info-card lottery-totem__lot-info-card--howto">
-                                                        <div class="icon icon--question"><span class=lot-bg>Como
-                                                                Jogar</span></div>
-                                                        <h4 class=title>Como Jogar</h4>
-                                                        <div class="content content--tens">Marcar entre<br>
-                                                            <div class=tens><span class=lot-bg>6</span> e <span
-                                                                    class=lot-bg>15</span> de <span
-                                                                    class=lot-border>60</span></div>
-                                                            <div>Números Disponíveis</div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="lottery-totem__lot-info-card lottery-totem__lot-info-card--drawprizes">
-                                                        <div class="icon icon--money-bag"><span class=lot-bg>Faixa de
-                                                                Premiação</span></div>
-                                                        <h4 class=title>Faixa de&nbsp;<br
-                                                                class="d-none d-lg-block">Premiação</h4>
-                                                        <div class="content content--tens">
-                                                            <div>Acertando</div>
-                                                            <div class=tens><span class=lot-bg>4</span> <span
-                                                                    class=lot-bg>5</span> <span class=lot-bg>6</span></div>
-                                                            <div>Números</div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="lottery-totem__lot-info-card lottery-totem__lot-info-card--distribution">
-                                                        <div class="icon icon--folk"><span class=lot-bg>Distribuição do
-                                                                Prêmio</span></div>
-                                                        <h4 class=title>Distribuição do Prêmio</h4>
-                                                        <div class=content><strong class=lot-color>43,3% da
-                                                                arrecadação</strong>
-                                                            <ul>
-                                                                <li><strong>35%</strong> para acertos na <span
-                                                                        class=lot-color>Sena</span></li>
-                                                                <li><strong>19%</strong> para acertos na <span
-                                                                        class=lot-color>Quina</span></li>
-                                                                <li><strong>19%</strong> para acertos na <span
-                                                                        class=lot-color>Quadra</span></li>
-                                                            </ul>
-                                                            <p><strong>* Acumula Prêmio - <span class=lot-color>22% para
-                                                                        Sena</span> </strong>dos concursos Final 0 e 5,
-                                                                <strong class=lot-color>5% para Sena</strong> do concurso
-                                                                especial da Mega da Virada</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=lottery-totem__aside>
-                                            <div class=lottery-totem__aside__wrap>
-                                                <div class=lottery-totem__nextdraw>
-                                                    <div class=lottery-totem__nextdraw__title>Próximo Concurso</div>
-                                                    <div class="card mt-0">
-                                                        <div class="lottery-totem__nextdraw__block card">
-                                                            <div class=lottery-totem__nextdraw__info>
-                                                                <div class=lottery-totem__nextdraw__prize>
-                                                                    <div class=lottery-totem__nextdraw__prize__wrap>
-                                                                        <span>R$</span> <span
-                                                                            class=lottery-totem__nextdraw__prize__value>16
-                                                                            Milhões</span></div>
-                                                                </div>
-                                                                <div class=lottery-totem__nextdraw__is-jackpot><i
-                                                                        class="fa fa-star"></i> <span>Acumulada!</span>
-                                                                </div>
-                                                                <div class=lottery-totem__nextdraw__draw-date>Sorteio:
-                                                                    <strong>Amanhã</strong></div>
-                                                                <div
-                                                                    class="lottery-totem__nextdraw__draw d-none d-lg-block">
-                                                                    Concurso: <strong>2554</strong></div>
-                                                            </div>
-                                                            <div class=lottery-totem__nextdraw__button-wrap><a
-                                                                    href=/mega-sena
-                                                                    class="btn btn-lot btn-square btn-block btn-invert text-uppercase"><span
-                                                                        class=d-lg-none>Apostar!</span> <span
-                                                                        class="d-none d-lg-inline-block">Aposte
-                                                                        Agora</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="lottery-totem__links d-none d-lg-block"><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/mega-sena/como-apostar><span
-                                                            class="lot-bg icon icon--question"></span> <span
-                                                            class=label>Em construção...</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/mega-sena/probabilidades><span
-                                                            class="lot-bg icon icon--dices"></span> <span
-                                                            class=label>Probabilidades</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/mega-sena/estatisticas><span
-                                                            class="lot-bg icon icon--bar-chart"></span> <span
-                                                            class=label>Estatísticas</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/mega-sena/premios-no-site><span
-                                                            class="lot-bg icon icon--money-bag"></span> <span
-                                                            class=label>Em construção...</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/noticias/mega-sena><span
-                                                            class="lot-bg icon icon--chat-baloons"></span> <span
-                                                            class=label>Últimas Notícias</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/mega-sena/resultados><span
-                                                            class="lot-bg icon icon--star"></span> <span class=label>Últimos
-                                                            Resultados</span></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>                            
-                        </div>
-                    </div>
-                    <div class="container lot-list">
-                        <div class=row>
-                            <div class=col-12>
-                                <div class=site-anchor id=dupla-de-pascoa></div>
-                                <section class="lottery-totem lot-dupla-de-pascoa">
-                                    <header class=lottery-totem__header>
-                                        <div class=lottery-totem__header-grid>
-                                            <div>
-                                                <h2 class=lottery-totem__header__title><a class=--lottery-hyperlink
-                                                        href=/dupla-de-pascoa>Dupla Sena de Páscoa</a></h2>
-                                            </div>
-                                            <div></div>
-                                        </div>
-                                    </header>
-                                    <div class=lottery-totem__modules-grid>
-                                        <div class=lottery-totem__body>
-                                            <div class="lottery-totem__body__content card">
-                                                <p>A Dupla Sena é a loteria que te oferece duas chances de ganhar. A cada
-                                                    concurso dois sorteios acontecem, aumentando muito as probabilidades de
-                                                    vencer com 3, 4, 5 ou 6 acertos.</p>
-                                            </div>
-                                            <div class="banner-nextdraw lot-dupla-de-pascoa">
-                                                <h2 class=banner-nextdraw__title>Próximo Concurso</h2>
-                                                <div class=card>
-                                                    <div class="banner-nextdraw__wrap card">
-                                                        <div class=banner-nextdraw__container>
-                                                            <div class=banner-nextdraw__info>
-                                                                <div class=banner-nextdraw__prize>
-                                                                    <div class=banner-nextdraw__prize__wrap><span>R$</span>
-                                                                        <span class=banner-nextdraw__prize__value>35
-                                                                            Milhões</span></div>
-                                                                </div>
-                                                                <div class=banner-nextdraw__draw-date>
-                                                                    Sorteio:<br><strong>08/04/2023</strong></div>
-                                                                <div class="banner-nextdraw__draw d-none d-md-block">
-                                                                    Concurso:<br><strong>2501</strong></div>
-                                                            </div>
-                                                            <div class=banner-nextdraw__button-wrap><a href=/dupla-de-pascoa
-                                                                    class="btn btn-block btn-square btn-lot btn-invert text-uppercase"><span
-                                                                        class=d-lg-none>Apostar!</span> <span
-                                                                        class="d-none d-lg-inline-block">Aposte
-                                                                        Agora</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=lottery-totem__aside>
-                                            <div class=lottery-totem__aside__wrap>
-                                                <div class="lottery-totem__links d-none d-lg-block"><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/dupla-de-pascoa/como-apostar><span
-                                                            class="lot-bg icon icon--question"></span> <span
-                                                            class=label>Em Construção...</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/dupla-de-pascoa/probabilidades><span
-                                                            class="lot-bg icon icon--dices"></span> <span
-                                                            class=label>Probabilidades</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/dupla-de-pascoa/estatisticas><span
-                                                            class="lot-bg icon icon--bar-chart"></span> <span
-                                                            class=label>Estatísticas</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/dupla-de-pascoa/premios-no-site><span
-                                                            class="lot-bg icon icon--money-bag"></span> <span
-                                                            class=label>Em construção...</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/noticias/dupla-de-pascoa><span
-                                                            class="lot-bg icon icon--chat-baloons"></span> <span
-                                                            class=label>Últimas Notícias</span> </a><a
-                                                        class="btn btn-lot btn-square btn-invert btn-block mb-3"
-                                                        href=/dupla-de-pascoa/resultados><span
-                                                            class="lot-bg icon icon--star"></span> <span class=label>Últimos
-                                                            Resultados</span></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section class=floatfooter data-vue=floatfooter v-cloak
                     v-bind:class="{ 'floatfooter--is-loaded' : loaded }" v-if=loaded>
                     <div class=minicart-overlay v-bind:class="{'minicart-overlay--active': showMinicart }"
@@ -463,10 +272,18 @@
                                     <div class=footer__widget__title>Loterias</div>
                                     <div class=footer__widget__content>
                                         <ul>
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="duplasena2023.html">Dupla Sena de Pascoa</a></li>
-                                            <li><a href="cartela20num.html">Mega Sena da Virada</a></li>
-                                            <li><a href="resultados.html">Resultados</a></li>
+                                            <li><a href=/mega-sena>Mega-Sena</a></li>
+                                            <li><a href=/dupla-sena>Dupla Sena</a></li>
+                                            <li><a href=/lotomania>Lotomania</a></li>
+                                            <li><a href=/quina>Quina</a></li>
+                                            <li><a href=/loteria-federal>Loteria Federal</a></li>
+                                            <li><a href=/loteca>Loteca</a></li>
+                                            <li><a href=/lotofacil>Lotofácil</a></li>
+                                            <li><a href=/timemania>Timemania</a></li>
+                                            <li><a href=/dia-de-sorte>Dia de Sorte</a></li>
+                                            <li><a href=/super-sete>Super Sete</a></li>
+                                            <li><a href=/mais-milionaria>Mais Milionária</a></li>
+                                            <li><a href=/loterias>Todas as Loterias</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -530,9 +347,14 @@
                             </div>
                         </div>
                     </section>
-                    
                 </footer>
             </div><input type=hidden id=MeuCampoQueReceberaValor>
+            <script src="https://www.megaloterias.com.br/assets/main.bundle.js?nocache=1673386452418" defer></script>
+            <script defer
+                src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+                integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+                data-cf-beacon='{"rayId":"787e129eeaf4a6b5","token":"2c7f3205feca416d8f01462a85f622f4","version":"2022.11.3","si":100}'
+                crossorigin="anonymous"></script>
         </body>
 
 </html>

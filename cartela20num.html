@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel=stylesheet href="./assets/styleclone.css" media=all>
   <title>Mega Sena da Virada 2023</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,7 @@
         <div class="topnav-1">
             <ul>
                 <li>
-                    <a href="">SEJA BEM VINDO AO BOLÃO LOTERIAS GLOBAL 2023</a>
+                    <a href="">BOLÃO LOTERIAS GLOBAL 2023</a>
                 </li>      
         </ul>
         </div>
@@ -41,10 +42,7 @@
             </li>
             <li>
                 <a href="resultados.html">RESULTADOS</a>
-            </li>
-            <li>
-                <a href="simulador.html">SIMULADOR DE MEGA SENA</a>
-            </li>      
+            </li>    
         </ul>
         </div>
     </div>
@@ -55,18 +53,18 @@
     <h2 align="center">MEGA VIRADA 2023 - CARTELAS VARIADAS</h2>
     <b>Como participar: </b> Entre no grupo e peça para ser incluido no site<br>
     <b>Objetivo: </b>Fazer coleta mensal para a Mega da Virada 2023<br>
-    <b>PIX: </b> bolao@loteriasglobal.com.br<br>
+    <b>PIX: </b>872XXX30659<br>
     <b>Valor: </b>R$120 ou 12 x R$10<br>
     <b>Participantes:
-    </b> Participantes para conseguirmos fazer a cartela variadas<br>
+    </b>O máximo de participantes para conseguirmos fazer muitas cartelas variadas<br>
     <b>Link grupo: </b>
     <a href="https://chat.whatsapp.com/J3aWhktZ4ZE5LqQL5lPcQA">https://chat.whatsapp.com/J3aWhktZ4ZE5LqQL5lPcQA</a>
     <br>
+    <br>
     <b>Observacoes:</b>
     <ul>
-      <li>O dinheiro sera investido em um CDB para render durante o ano</li>
       <li>A cada pagamento, irei atualizar o status do mes no nome do participante</li>
-      <li> Pode pagar 2 meses ou mais de uma vez. Darei baixa nos meses correspondentes.</li>
+      <li> Pode pagar 2 meses ou mais de uma vez. A baixa será realizada nos meses correspondentes.</li>
     </ul>
     <h1>Controle pagamento</h1>
     <b>Valor arrecadado ate o momento: </b>R$ 00,00<br>
@@ -733,7 +731,91 @@
       </tbody>
     </table>
   </div>
-
+  <!-- --Menu final da página -->
+  <section class=floatfooter data-vue=floatfooter v-cloak
+  v-bind:class="{ 'floatfooter--is-loaded' : loaded }" v-if=loaded>
+  <div class=minicart-overlay v-bind:class="{'minicart-overlay--active': showMinicart }"
+      v-on:click=toggleMinicart></div><mini-cart v-bind:class="{'minicart--active': showMinicart }"
+      v-on:on-close=toggleMinicart class=minicart--mobile></mini-cart>
+  <div class=floatfooter__items-wrap>
+  </div>
+  <div class=floatfooter__shadow v-on:click=toggleMenu(false)></div>
+</section>
+<footer id=footer class=main-footer>
+  <section class=footer__primary>
+  <div class=container>
+      <div class=row>
+          <div class="footer__widget col-md-3 col-sm-6 col-6">
+              <div class=footer__widget__title>Loterias</div>
+              <div class=footer__widget__content>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="duplasena2023.html">Dupla Sena de Pascoa</a></li>
+                      <li><a href="cartela20num.html">Mega Sena da Virada</a></li>
+                      <li><a href="resultados.html">Resultados</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer__widget col-md-3 col-sm-6 col-6">
+              <div class=footer__widget__title>Sorteios Especiais</div>
+              <div class=footer__widget__content>
+                  <ul>
+                      <li><a href=/mega-da-virada>Mega da Virada</a></li>
+                      <li><a href=/dupla-de-pascoa>Dupla Sena de Páscoa</a></li>
+                      <li><a href=/quina-de-sao-joao>Quina de São João</a></li>
+                      <li><a href=/lotofacil-da-independencia>Lotofácil da Independência</a></li>
+                  </ul>
+              </div><br>
+              <div class="col-md-12 col-sm-12 footer__widget">
+                  <div class=footer__widget--payment--block>
+                      <div class=footer__widget__content>
+                          <div class=footer__widget--payment>
+                              <div class="footer__widget--payment--icon ico-elo" title=Elo></div>
+                              <div class="footer__widget--payment--icon ico-american"
+                                  title="American Express"></div>
+                              <div class="footer__widget--payment--icon ico-hipercard"
+                                  title=Hipercard></div>
+                              <div class="footer__widget--payment--icon ico-mastercard"
+                                  title=Mastercard>
+                              </div>
+                              <div class="footer__widget--payment--icon ico-visa" title=Visa>
+                              </div>
+                              <div class="footer__widget--payment--icon ico-boleto" title=Boleto>
+                              </div>
+                              <div class="footer__widget--payment--icon ico-bradesco"
+                                  title=Bradesco></div>
+                              <div class="footer__widget--payment--icon ico-itau" title=Itaú>
+                              </div>
+                              <div class="footer__widget--payment--icon ico-bb"
+                                  title="Banco do Brasil"></div>
+                              <div class="footer__widget--payment--icon ico-santander"
+                                  title=Santander></div>
+                              <div class="footer__widget--payment--icon ico-pix" title=Pix></div>
+                              <div class="footer__widget--payment--icon ico-ame"
+                                  title="Ame Digital"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</section>
+  <section class=footer__secondary>
+    <div class=container>
+        <div class=row>
+            <div class=col-12>
+                <p class=text-center>Copyright &copy; 2023 Loterias Global - Todos os direitos
+                    reservados - <a href=/institucional/termos-de-uso>Termos e Condições de Uso</a>
+                    - <a href=/institucional/politica-de-privacidade>Política de
+                        Privacidade</a><br>Serviços
+                    disponibilizados pela Loterias Global Serviços de Intermediações ltda. CNPJ:
+                    48.809.124/0001-49 - Endereço: Rua 9 dedos e ladrão , 171 - sala 171 - CEP
+                    02.171-171 - 171
+                    Brasília / DF</p>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 
 </html>
