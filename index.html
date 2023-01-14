@@ -3,7 +3,9 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https:slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https:slick/slick-theme.css" />
     <title>HOME</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,7 +22,7 @@
                 <div class="topnav-1">
                     <ul>
                         <li>
-                            <a href="">BOLÃO LOTERIAS GLOBAL 2023 </a>
+                            <a href="index.html"> &nbsp; BOLÃO LOTERIAS GLOBAL 2023 </a>
                         </li>
                     </ul>
                 </div>
@@ -47,27 +49,98 @@
             </div>
         </div>
     </main>
-        <div class="col-100">
-            <div class="slider-principal">
-                <div><img src="./img/balls2.png"></div>
-                <div><img src="./img/loto3.png"></div>
-                <div><img src="./img/loto2.png"></div>
-                <div><img src="./img/loto3.png"></div>
-                <div><img src="./img/loto.png"></div>
-              </div>
+    <div class="col-100">
+        <div class="slider-principal">
+            <div><img src="./img/balls2.png"></div>
+            <div><img src="./img/loto3.png"></div>
+            <div><img src="./img/loto2.png"></div>
+            <div><img src="./img/loto.png"></div>
         </div>
-
+    </div>
         <h2 align="center">2023 O ANO DO COELHO</h2>
 
         <h2 align="center">O coelho, segundo a astrologia chinesa, representa coisas boas, como sorte, prosperidade e
             sucesso – a dica é se esforçar e trabalhar bastante. Também, a expectativa para quem tem o ano de nascimento
             definido por esse animal, é de um ano de paz, tranquilidade, equilíbrio e tolerância.</h2>
 
+        <!-- --Menu final da página -->
+        <section class=floatfooter data-vue=floatfooter v-cloak v-bind:class="{ 'floatfooter--is-loaded' : loaded }"
+            v-if=loaded>
+            <div class=minicart-overlay v-bind:class="{'minicart-overlay--active': showMinicart }"
+                v-on:click=toggleMinicart></div><mini-cart v-bind:class="{'minicart--active': showMinicart }"
+                v-on:on-close=toggleMinicart class=minicart--mobile></mini-cart>
+            <div class=floatfooter__items-wrap>
+            </div>
+            <div class=floatfooter__shadow v-on:click=toggleMenu(false)></div>
+        </section>
+        <footer id=footer class=main-footer>
+            <section class=footer__primary>
+                <div class=container>
+                    <div class=row>
+                        <div class="footer__widget col-md-3 col-sm-6 col-6">
+                            <div class=footer__widget__title>Loterias</div>
+                            <div class=footer__widget__content>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="duplasena2023.html">Dupla Sena de Pascoa</a></li>
+                                    <li><a href="cartela20num.html">Mega Sena da Virada</a></li>
+                                    <li><a href="resultados.html">Resultados</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__widget col-md-3 col-sm-6 col-6">
+                            <div class=footer__widget__title>Sorteios Especiais</div>
+                            <div class=footer__widget__content>
+                                <ul>
+                                    <li><a href=/mega-da-virada>Mega da Virada</a></li>
+                                    <li><a href=/dupla-de-pascoa>Dupla Sena de Páscoa</a></li>
+                                    <li><a href=/quina-de-sao-joao>Quina de São João</a></li>
+                                    <li><a href=/lotofacil-da-independencia>Lotofácil da Independência</a></li>
+                                </ul>
+                            </div><br>
+                            <div class="col-md-12 col-sm-12 footer__widget">
+                                <div class=footer__widget--payment--block>
+                                    <div class=footer__widget__content>
+                                        <div class=footer__widget--payment>
+                                            <div class="footer__widget--payment--icon ico-elo" title=Elo></div>
+                                            <div class="footer__widget--payment--icon ico-american"
+                                                title="American Express"></div>
+                                            <div class="footer__widget--payment--icon ico-hipercard" title=Hipercard>
+                                            </div>
+                                            <div class="footer__widget--payment--icon ico-mastercard" title=Mastercard>
+                                            </div>
+                                            <div class="footer__widget--payment--icon ico-visa" title=Visa>
+                                            </div>
+                                            <div class="footer__widget--payment--icon ico-boleto" title=Boleto>
+                                            </div>
+                                            <div class="footer__widget--payment--icon ico-bradesco" title=Bradesco>
+                                            </div>
+                                            <div class="footer__widget--payment--icon ico-itau" title=Itaú>
+                                            </div>
+                                            <div class="footer__widget--payment--icon ico-bb" title="Banco do Brasil">
+                                            </div>
+                                            <div class="footer__widget--payment--icon ico-santander" title=Santander>
+                                            </div>
+                                            <div class="footer__widget--payment--icon ico-pix" title=Pix></div>
+                                            <div class="footer__widget--payment--icon ico-ame" title="Ame Digital">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
     </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 
     <section class=footer__secondary>
         <div class=container>
@@ -85,6 +158,14 @@
             </div>
         </div>
     </section>
+        <footer>
+        <div class="footer">
+            <p>Para cada problema existe um desafio, para cada desafio existe uma solução. <a
+                    href="mailto:fa&#108;&#101;co&#109;&#64;ma&#114;&#99;&#101;&#108;oto&#114;re&#115;&#119;&#101;b.co&#109;"
+                    title="&#102;al&#101;com&#64;&#109;ar&#99;e&#108;o&#116;o&#114;r&#101;&#115;w&#101;b.c&#111;&#109;">seja
+                    feliz em 2023.</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>
