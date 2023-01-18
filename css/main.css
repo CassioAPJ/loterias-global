@@ -11424,7 +11424,7 @@ button.slick-prev {
     z-index: 9;
     background-color: transparent;
     position: absolute;
-    background-image: url('../img/slider.png');
+/*     background-image: url('../img/slider.png'); */
     top: 45%;
     right: 1280;
 }
@@ -11436,7 +11436,7 @@ button.slick-next {
     z-index: 9;
     background-color: transparent;
     position: absolute;
-    background-image: url('../img/slider_post.png');
+/*     background-image: url('../img/arrow-left-square.png'); */
     top: 45%;
     right: 0;
 }
