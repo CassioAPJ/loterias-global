@@ -272,7 +272,16 @@
         }
 
         button {
-            border-radius: 0
+            cursor: pointer;
+            background-color: transparent;
+            border: 0px;
+            color: #FF0000;
+            font-size: 1.0em;
+            margin: 3px;
+            margin-top: 15px;
+            border: 1px solid #008000;
+            border-radius: 3px;
+            padding: 3px;
         }
 
         button:focus {
@@ -615,12 +624,6 @@
         @media (min-width:768px) {
             .container {
                 max-width: 720px
-            }
-        }
-
-        @media (min-width:992px) {
-            .container {
-                max-width: 960px
             }
         }
 
@@ -1364,15 +1367,6 @@
                 margin-left: 91.666667%
             }
         }
-
-        @media (min-width:992px) {
-            .col-lg {
-                -ms-flex-preferred-size: 0;
-                flex-basis: 0;
-                -ms-flex-positive: 1;
-                flex-grow: 1;
-                max-width: 100%
-            }
 
             .col-lg-auto {
                 -ms-flex: 0 0 auto;
@@ -4571,15 +4565,6 @@
                 padding-left: 0
             }
         }
-
-        @media (min-width:992px) {
-            .navbar-expand-lg {
-                -ms-flex-flow: row nowrap;
-                flex-flow: row nowrap;
-                -ms-flex-pack: start;
-                justify-content: flex-start
-            }
-
             .navbar-expand-lg .navbar-nav {
                 -ms-flex-direction: row;
                 flex-direction: row
@@ -5984,12 +5969,6 @@
             }
         }
 
-        @media (min-width:992px) {
-            .modal-lg {
-                max-width: 800px
-            }
-        }
-
         .tooltip {
             position: absolute;
             z-index: 1070;
@@ -6906,46 +6885,6 @@
             }
 
             .d-md-inline-flex {
-                display: -ms-inline-flexbox !important;
-                display: inline-flex !important
-            }
-        }
-
-        @media (min-width:992px) {
-            .d-lg-none {
-                display: none !important
-            }
-
-            .d-lg-inline {
-                display: inline !important
-            }
-
-            .d-lg-inline-block {
-                display: inline-block !important
-            }
-
-            .d-lg-block {
-                display: block !important
-            }
-
-            .d-lg-table {
-                display: table !important
-            }
-
-            .d-lg-table-row {
-                display: table-row !important
-            }
-
-            .d-lg-table-cell {
-                display: table-cell !important
-            }
-
-            .d-lg-flex {
-                display: -ms-flexbox !important;
-                display: flex !important
-            }
-
-            .d-lg-inline-flex {
                 display: -ms-inline-flexbox !important;
                 display: inline-flex !important
             }
@@ -10058,7 +9997,7 @@
         }
 
         header {
-            background-color: #000
+            background-color: #f8f9fa;
         }
 
         footer {
@@ -10407,8 +10346,8 @@
                 float: left;
                 text-align: center;
                 font-size: 2.5rem;
-                border-left: 1px solid #c64024;
-                border-right: 1px solid #c64024;
+                border-left: 1px solid #28a745;
+                border-right: 1px solid #28a745;
                 border-bottom-color: transparent;
                 border-top-color: transparent;
                 border-bottom-left-radius: 10px 5px;
@@ -10421,7 +10360,7 @@
         @media(min-width:601px) {
             .area_numeros_dezena {
                 background-color: #fff;
-                color: #c64024;
+                color: #28a745;
                 height: 2.5rem;
                 width: 3.75rem;
                 margin: .55rem .35rem;
@@ -10429,8 +10368,8 @@
                 text-align: center;
                 font-size: 2.2rem;
                 line-height: 2.4rem;
-                border-left: 1px solid #c64024;
-                border-right: 1px solid #c64024;
+                border-left: 1px solid #28a745;
+                border-right: 1px solid #28a745;
                 border-bottom-color: transparent;
                 border-top-color: transparent;
                 border-bottom-left-radius: 20px 7px;
@@ -10438,37 +10377,6 @@
                 border-top-left-radius: 20px 7px;
                 border-top-right-radius: 20px 7px
             }
-        }
-
-        .area_numeros {
-            background-color: #ff9;
-            padding-left: 7px;
-            padding-top: 7px;
-            padding-bottom: 7px;
-            border: 1px solid #c64024
-        }
-
-        .area_numeros_dezena:hover {
-            cursor: pointer
-        }
-
-        .area_numeros_dezena_selecionado {
-            background-color: #000;
-            color: #fff;
-            cursor: hand
-        }
-
-        #qtde_selecionados,
-        #qtde_selecionados_sorteio2 {
-            margin-top: 5px;
-            text-align: center;
-            font-size: 1.5rem
-        }
-
-        #qtde_selecionados span,
-        #qtde_selecionados_sorteio2 span {
-            font-size: 1.7rem;
-            font-weight: bold
         }
 
         .lista_concursos {
@@ -11306,7 +11214,6 @@
             <div class="row bantop">
                 <div class="col-12 text-center">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- AL - Horizontal1 -->
                     <ins class="adsbygoogle bantopsize"
                         style="display: inline-block; width:100%; height:100%; margin: 0 auto;"
                         data-ad-client="ca-pub-9359543404424023" data-ad-slot="3615821088"></ins>
@@ -11318,12 +11225,7 @@
             <div class="mb-2 pb-2"></div>
 
         </div>
-
     </header>
-
-
-
-
     <main role="main">
 
         <div class="container fundo_branco">
@@ -11358,7 +11260,6 @@
                         <input type="hidden" name="nome_lot" id="nome_lot" value="Mega Sena">
                         <input type="hidden" name="qamp" id="qamp" value="6">
                         <input type="hidden" name="qamrp" id="qamrp" value="4">
-
                         <div class="espacamento_altura"></div>
                         <script>var arr_numeros_moldura = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20, 21, 30, 31, 40, 41, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]; var arr_dezenas_ultimo_concurso = [45, 58, 3, 20, 52, 53];</script>
                         Nosso simulador Mega Sena testa se os números que você selecionou já sairam alguma vez, desde o
@@ -11369,11 +11270,11 @@
                         "Simular".
                         <br />O resultado da simulação e todos seus detalhes, sairá logo abaixo do botão "Simular".
                         <br />O Simulador é atualizado toda semana, após cada sorteio e está atualizado até o concurso
-                        <strong>2555</strong> do dia <strong>14/01/2023</strong> (sábado).
+                        <strong>2556</strong> do dia <strong>18/01/2023</strong> (Quarta-Feira).
 
                         <style>
                             .banhor2 {
-                                height: 110px;
+                                height: 100px;
                                 margin-top: 1rem;
                                 margin-bottom: 1rem;
                             }
@@ -11392,7 +11293,7 @@
 
                             @media(min-width:992px) {
                                 .banhor2 {
-                                    height: 110px;
+                                    height: 20px;
                                 }
                             }
 
@@ -11450,6 +11351,10 @@
 
 
                         <div class="espacamento_altura"></div>
+
+                        <header>
+                            <img src="img/logo_mega_sena.png" alt="logotipo mega-sena">
+                        </header>
 
 
                         <div id="area_numeros" class="area_numeros">
@@ -11518,7 +11423,6 @@
                                 type="hidden" name="simulador_time_coracao" id="simulador_time_coracao" value="">
                         </div>
 
-
                         <div id="qtde_selecionados">
                             &nbsp;<span>0</span> número selecionado<br />
                             par: <span>0</span>, ímpar: <span>0</span>, primos: <span>0</span>, moldura: <span>0</span>,
@@ -11526,18 +11430,11 @@
                             saiu no último concurso: <span>0</span>, soma: <span>0</span>
                         </div>
 
-
-
                         <div>
                             <div class="espacamento_altura"></div>
 
                             <fieldset class="border p-2">
                                 <legend class="w-auto">Opções Avançadas:</legend>
-                                <!--
-    <div class="text-center">
-      <input type="button" id="link_opcoes" name="link_opcoes" value="Mostrar" class="btn btn-info btn-sm" />
-    </div>
--->
                                 <div id="sim_opcoes">
                                     <p class="text-center">Essas configurações são opcionais, faça se quiser.</p>
                                     Na lista da resposta, mostrar apenas:
@@ -11567,7 +11464,6 @@
                             Selecione os números e clique em simular!
                         </div>
 
-
                         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -11586,40 +11482,12 @@
                             </div>
                         </div>
 
-
                         <div class="limpar_flutuacao espacamento_altura"></div>
                         <div class="col-sm-12">
-                            em desenvolvimeto...
-                            <br />...
-                            ... <a href="sugestao"
-                                title="Clique aqui entre em contato e mande sua sugestão">clique aqui</a>
+                            em desenvolvimento...
+
                         </div>
                     </div>
-                    <br /><br />
-                    <br />
-                    <style>
-                        .banqdo3 {
-                            height: 380px;
-                            position: relative;
-                            width: 100%;
-                            max-width: 100%;
-                            border: 0px solid blue;
-                        }
-
-
-                        .banqdosize3 {
-                            display: block;
-                            margin: 0 auto;
-                            text-align: center;
-                            max-height: 285px;
-                            position: absolute;
-                            width: inherit;
-                            max-width: inherit;
-                            margin-top: 1rem;
-                        }
-                    </style>
-
-
                     <div class="row ">
                         <div class="col-12 banqdo3">
                             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -11630,8 +11498,6 @@
                             </script>
                         </div>
                     </div>
-
-
                 </div>
 
                 <aside class="col-md-4 text-center">
@@ -11673,7 +11539,6 @@
                             <div class="col-12 text-center">
                                 <script async
                                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                                <!-- AL - Quadrado1 -->
                                 <ins class="adsbygoogle banqdosize1"
                                     style="display:block; width:100%; height:100%; margin: 0 auto;"
                                     data-ad-client="ca-pub-9359543404424023" data-ad-slot="3329359554"></ins>
@@ -11762,6 +11627,22 @@
             <p class="text-center">Loterias Global - 2014 - 2023</p>
         </div>
     </footer>
+    <section class=footer__secondary>
+		<div class=container>
+			<div class=row>
+				<div class=col-12>
+					<p class=text-center>Copyright &copy; 2023 Loterias Global - Todos os direitos
+						reservados - <a href=/institucional/termos-de-uso>Termos e Condições de Uso</a>
+						- <a href=/institucional/politica-de-privacidade>Política de
+							Privacidade</a><br>Serviços
+						disponibilizados pela Loterias Global Serviços de Intermediações ltda. CNPJ:
+						48.809.124/0001-49 - Endereço: Rua 9 dedos e ladrão , 171 - sala 171 - CEP
+						02.171-171 - 171
+						Brasília / DF</p>
+				</div>
+			</div>
+		</div>
+	</section>
     <footer>
         <div class="footer2">
             <p>Para cada problema existe um desafio, para cada desafio existe uma solução. <a
@@ -11840,7 +11721,5 @@
             border-bottom-color: #eee
         }
     </style>
-
 </body>
-
 </html>
