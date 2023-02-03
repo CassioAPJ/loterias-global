@@ -64687,16 +64687,6 @@ main-footer {
         cursor: pointer
     }
 
-    .navbar-toggler-icon {
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        vertical-align: middle;
-        content: "";
-        background: no-repeat center center;
-        background-size: 100% 100%
-    }
-
     @media (max-width:575.98px) {
 
         .navbar-expand-sm>.container,
@@ -64971,10 +64961,6 @@ main-footer {
         border-color: rgba(0, 0, 0, .1)
     }
 
-    .navbar-light .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
-    }
-
     .navbar-light .navbar-text {
         color: rgba(0, 0, 0, .5)
     }
@@ -65020,10 +65006,6 @@ main-footer {
     .navbar-dark .navbar-toggler {
         color: rgba(255, 255, 255, .5);
         border-color: rgba(255, 255, 255, .1)
-    }
-
-    .navbar-dark .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
     }
 
     .navbar-dark .navbar-text {
@@ -71299,16 +71281,16 @@ main-footer {
     }
 
     @font-face {
-        font-family: 'asloterias';
-        src: url('fonts/asloterias.eot?75336191');
-        src: url('fonts/asloterias.eot?75336191#iefix') format('embedded-opentype'), url('fonts/asloterias.woff2?75336191') format('woff2'), url('fonts/asloterias.woff?75336191') format('woff'), url('fonts/asloterias.ttf?75336191') format('truetype'), url('fonts/asloterias.svg?75336191#asloterias') format('svg');
+        font-family: 'loteriasglobal';
+        src: url('fonts/loteriasglobal.eot?75336191');
+        src: url('fonts/loteriasglobal.eot?75336191#iefix') format('embedded-opentype'), url('fonts/loteriasglobal.woff2?75336191') format('woff2'), url('fonts/loteriasglobal.woff?75336191') format('woff'), url('fonts/loteriasglobal.ttf?75336191') format('truetype'), url('fonts/loteriasglobal.svg?75336191#loteriasglobal') format('svg');
         font-weight: normal;
         font-style: normal
     }
 
     [class^="icon-"]:before,
     [class*=" icon-"]:before {
-        font-family: "asloterias";
+        font-family: "loteriasglobal";
         font-style: normal;
         font-weight: normal;
         speak: none;
@@ -71421,7 +71403,7 @@ main-footer {
         content: '\e817'
     }
 
-    .icon-asloterias:before {
+    .icon-loteriasglobal:before {
         content: '\e818'
     }
 
@@ -71436,3 +71418,13 @@ main-footer {
     .gitattributes {
         text: auto;
     }
+
+    .btn-fixed {
+        position: fixed;
+        bottom: 30px;
+        height: 30px;
+        visibility: hidden;
+      }
+    .btn-fixed.visible {
+         visibility: visible;
+      }
