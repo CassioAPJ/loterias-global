@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#btnTop {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    width: 50px;
+    height: 50px; 
+    background-color: rgba(0, 0, 0, .075);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.link {
+    border: solid #77ab22;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+    }
+    
+.top {
+    transform: rotate(-135deg);
+    -webkit-trasform: rotate(-135deg);
+    }
