@@ -10424,8 +10424,8 @@ h4 {
     background-color: #28a745;
     padding-left: 7px;
     padding-top: 7px;
-    padding-bottom: 7px;
-    border: 1px solid #c64024
+    padding-bottom: 3px;
+    border: 1px solid #00233a
 }
 
 .area_numeros_dezena:hover {
@@ -11138,7 +11138,7 @@ legend {
 }
 
 .icon-gerador_sorte:before {
-    content: '\e810'
+    content: '\e838';
 }
 
 .icon-gerador:before {
