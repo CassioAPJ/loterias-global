@@ -11476,96 +11476,6 @@ li.slick-active button {
     display: inline-block;
 }
 
-/* Clone */
-
-:root {
-    --header-height: 66px;
-    --float-footer-height: 68px
-}
-
-@media screen and (min-width:992px) {
-    :root {
-        --header-height: 89px
-    }
-}
-
-.bantop {
-    height: 110px;
-}
-
-@media(min-width:576px) {
-    .bantop {
-        height: 110px;
-    }
-}
-
-@media(min-width:768px) {
-    .bantop {
-        height: 265px;
-    }
-}
-
-@media(min-width:992px) {
-    .bantop {
-        height: 20px;
-    }
-}
-
-.bantopsize {
-    max-height: 90px;
-}
-
-@media(min-width:576px) {
-    .bantopsize {
-        max-width: 550px;
-        max-height: 105px;
-    }
-}
-
-@media(min-width:768px) {
-    .bantopsize {
-        max-width: 750px;
-        max-height: 260px;
-    }
-}
-
-@media(min-width:992px) {
-    .bantopsize {
-        max-width: 1140px;
-        max-height: 260px;
-    }
-}
-
-.banqdo3 {
-    height: 380px;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    border: 0px solid blue;
-}
-
-
-.banqdosize3 {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    max-height: 285px;
-    position: absolute;
-    width: inherit;
-    max-width: inherit;
-    margin-top: 1rem;
-}
-
-.banqdo1 {
-    height: 381px;
-}
-
-.banqdosize1 {
-    max-height: 380px;
-    max-width: 380px;
-    margin-top: 1rem;
-}
-
 
 /* ----------------------- */
 /*!normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css*/
@@ -12160,7 +12070,6 @@ template {
 }
 
 @media(min-width:768px) {
-
     .container-md,
     .container-sm,
     .container {
@@ -26499,7 +26408,7 @@ hr {
 
 html,
 body {
-    font-size: 12px
+    font-size: 8px
 }
 
 @media screen and (min-width:768px) {

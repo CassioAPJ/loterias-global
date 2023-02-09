@@ -7,7 +7,7 @@ html {
     bottom: 40px;
     right: 10px;
     width: 50px;
-    height: 50px; 
+    height: 50px;
     background-color: rgba(0, 0, 0, .075);
     border-radius: 50%;
     display: flex;
@@ -22,9 +22,59 @@ html {
     border-width: 0 7px 7px 0;
     padding: 5px;
     display: inline-block;
-    }
-    
+}
+
 .top {
     transform: rotate(-135deg);
     -webkit-trasform: rotate(-135deg);
-    }
+}
+
+/* Tabelas*/
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-c3ow {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-ukao {
+    background-color: #009901;
+    border-color: #000000;
+    color: #000000;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+}
