@@ -58,7 +58,6 @@ article,
 aside,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 main,
@@ -73,7 +72,6 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
     text-align: left;
     background-color: #fff;
 }
@@ -9930,18 +9928,6 @@ a.text-dark:hover {
 
     thead {
         display: table-header-group
-    }
-
-    img,
-    tr {
-        page-break-inside: avoid
-    }
-
-    h2,
-    h3,
-    p {
-        orphans: 3;
-        widows: 3
     }
 
     h2,
@@ -30070,10 +30056,10 @@ body.has-page-nav .site-anchor {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 2.85rem;
+    height: 2.00rem;
     font-size: 1rem;
-    border: 1px solid #4ed887;
-    background-color: #4ed887;
+    border: 1px solid #209869;
+    background-color: #209869;
     color: #fff;
     cursor: pointer;
     border-radius: 1.42rem;
@@ -30133,6 +30119,42 @@ a.btn {
     border-color: #fff;
     -webkit-box-shadow: rgba(0, 0, 0, .1) 0 0 15px;
     box-shadow: rgba(0, 0, 0, .1) 0 0 15px
+}
+
+
+.btn:not(:disabled) {
+    cursor: pointer;
+}
+
+.mbr-form .btn {
+    margin: 0.4rem 0;
+}
+
+.btn-black, .btn-black:active {
+    background-color: #333333 !important;
+    border-color: #333333 !important;
+    color: #ffffff !important
+}
+
+.display-7 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-display: swap;
+}
+
+.alert {
+    color: #ffffff;
+    border-radius: 0;
+    border: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-top: 1.875rem;
+    padding: 1.25rem;
+    position: relative;
+}
+
+.alert-success {
+    background-color: #049645;
 }
 
 @media screen and (min-width:992px) {

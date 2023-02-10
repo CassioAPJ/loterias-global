@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171530517-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171530517-1');
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+<meta name="description" content="Aproveite. Deixe que o GERADOR DE APOSTA gere os números para você apostar. Vai deixar para outros os números que poderiam ser seus?">
+<title>MEGA-SENA - Aqui você gera seus números da sorte na loteria!</title>
+<meta name="keywords" content="Loteria, mega-sena, dupla sena, lotofácil, lotomania, timemania, quina, dia de sorte">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="7 day">
+<meta name="language" content="Portuguese">
+<meta name="generator" content="VS">
+<meta name="author" content="Marcelo Guaraldo" />
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/facebook-plugin/style.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="assets/dropdown/css/style.css">
+<link rel="stylesheet" href="assets/tether/tether.min.css">
+<link rel="stylesheet" href="assets/theme/css/style.css">
+<link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+<script language="JavaScript">
+//-->
+function megasena(){
+var totalnumbers=document.getElementById("numeros").value;  
+var lowerbound=1   //input lower bound for each random number
+var upperbound=60  //input upper bound for each random number
+B=' ';	
+megasenaNumbers=new Array();	
+ for (i = 1; i <= totalnumbers; i++)
+ {
+ RandomNumber = Math.round(lowerbound+Math.random()*(upperbound-lowerbound));
+  for (j = 1; j <= totalnumbers; j)
+  {
+  if (RandomNumber == megasenaNumbers[j])
+    {
+     RandomNumber=Math.round(lowerbound+Math.random()*(upperbound-lowerbound));
+     j=0;
+    }
+  j++;
+  }
+ megasenaNumbers[i]=RandomNumber;
+ }
+megasenaNumbers=megasenaNumbers.toString();
+X=megasenaNumbers.split(',');
+ for (i=0; i < X.length; i++)
+ {
+ X[i]=X[i]+' ';
+ if (X[i].length==2) 
+ X[i]='0'+X[i];
+ } 
+X=X.sort();
+ for (i=0; i < X.length; i++)
+ {
+ OutPut=B+=X[i];
+ }
+if (document.all)document.all.layer1.innerHTML=OutPut;
+if (document.getElementById)document.getElementById("layer1").innerHTML=OutPut;
+if (document.layers){
+  document.layers.layer1.document.open();
+  document.layers.layer1.document.write("<span style='position:absolute;top:0px;left:0px;font-family:Verdana;font-size:20px;color:#888888;text-align:center'> "+OutPut+"</span>");
+  document.layers.layer1.document.close();
+  }
+  T=setTimeout('megasena()',20);
+//window.status=OutPut;
+}
+function StOp(){
+setTimeout('clearTimeout(T)',1000);
+}
+//-->
+</script>
+</head>
+<body>
+<section class="menu cid-s3waaq7gde" once="menu" id="menu1-1k">
+  <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="hamburger"> <span></span> <span></span> <span></span> <span></span> </div>
+    </button>
+    <div class="menu-logo">
+      <div class="navbar-brand"> <span class="navbar-logo"> <a href="https://geradordeaposta.com.br"> <img src="assets/images/icon.png" alt="GERADOR DE APOSTA" title="" style="height: 3.8rem;"> </a> </span> <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-5" href="index.html"> GERADOR DE APOSTA</a></span> </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+        <li class="nav-item"> <a class="nav-link link text-white display-7" href="lotofacil.html"> LOTOFÁCIL</a> </li>
+        <li class="nav-item"><a class="nav-link link text-white display-7" href="#"> MEGA-SENA</a></li>
+        <li class="nav-item"><a class="nav-link link text-white display-7" href="duplasena.html"> DUPLA SENA</a></li>
+        <li class="nav-item"><a class="nav-link link text-white display-7" href="quina.html"> QUINA</a></li>
+        <li class="nav-item"><a class="nav-link link text-white display-7" href="timemania.html"> TIMEMANIA</a></li>
+        <li class="nav-item"><a class="nav-link link text-white display-7" href="lotomania.html"> LOTOMANIA</a></li>
+        <li class="nav-item"> <a class="nav-link link text-white display-7" href="diadesorte.html"> DIA DE SORTE&nbsp;</a> </li>
+      </ul>
+    </div>
+  </nav>
+</section>
+<section class="header1 cid-s3waaqRQlN mbr-parallax-background" id="header1-1l">
+  <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(20, 157, 204);"> </div>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="mbr-white col-md-10">
+        <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">MEGA-SENA</h1>
+        <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">Gere seus números da sorte</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mbr-section form3 cid-s3waaru7lq" id="form3-1m">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="title col-12 col-lg-8">
+        <h2 class="align-center pb-2 mbr-fonts-style display-5">
+          <p>OBTENHA OS SEUS NÚMEROS DA SORTE<br>
+          </p>
+        </h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="title col-12 col-lg-8"> 
+        <form class="mbr-form form-with-styler">
+          <div class="row">
+          	<div class="col-6">
+            <SELECT id="numeros" name="numeros" size="1" class="btn btn-outline-dark display-7">
+            <option value="6">&nbsp;&nbsp;&nbsp;&nbsp;6 números&nbsp;&nbsp;</option>
+            <option value="7">&nbsp;&nbsp;&nbsp;&nbsp;7 números&nbsp;&nbsp;</option>
+            <option value="8">&nbsp;&nbsp;&nbsp;&nbsp;8 números&nbsp;&nbsp;</option>
+            <option value="9">&nbsp;&nbsp;&nbsp;&nbsp;9 números&nbsp;&nbsp;</option>
+            <option value="10">&nbsp;&nbsp;10 números&nbsp;&nbsp;</option>
+            <option value="11">&nbsp;&nbsp;11 números&nbsp;&nbsp;</option>
+            <option value="12">&nbsp;&nbsp;12 números&nbsp;&nbsp;</option>
+            <option value="13">&nbsp;&nbsp;13 números&nbsp;&nbsp;</option>
+            <option value="14">&nbsp;&nbsp;14 números&nbsp;&nbsp;</option>
+            <option value="15">&nbsp;&nbsp;15 números&nbsp;&nbsp;</option>
+            </SELECT>
+						</div>
+          	<div class="col-6" style="text-align:center;">&nbsp;</div>
+          </div>
+          <div class="row">
+          	<div class="col-6">
+              <button type="button" class="btn btn-black display-7" onClick="megasena();StOp()">GERAR NÚMEROS</button>
+          </div>
+          	<div class="col-6">
+            <div class="alert alert-success display-7" id="layer1" style="font-size:22px; text-align:center;">? ? ? ? ? ? ?</div>
+            </div>
+         </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="step1 cid-s3waarYnDZ" id="step1-1n">
+  <div class="container">
+    <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"> INSTRUÇÕES</h2>
+    <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5"> abaixo, em detalhes todas as informações sobre a MEGA-SENA</h3>
+    <div class="step-container">
+      <div class="card separline pb-4">
+        <div class="step-element d-flex">
+          <div class="step-wrapper pr-3">
+            <h3 class="step d-flex align-items-center justify-content-center"> 1 </h3>
+          </div>
+          <div class="step-text-content">
+            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">COMO JOGAR </h4>
+            <p class="mbr-step-text mbr-fonts-style display-7">A Mega-Sena paga milhões para o acertador dos 6 números sorteados. Ainda é possível ganhar prêmios ao acertar 4 ou 5 números dentre os 60 disponíveis no volante de apostas. Para realizar o sonho de ser o próximo milionário, você deve marcar de 6 a 15 números do volante.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card separline pb-4">
+        <div class="step-element d-flex">
+          <div class="step-wrapper pr-3">
+            <h3 class="step d-flex align-items-center justify-content-center"> 2 </h3>
+          </div>
+          <div class="step-text-content">
+            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">SORTEIOS</h4>
+            <p class="mbr-step-text mbr-fonts-style display-7">Os sorteios da Mega-Sena são realizados duas vezes por semana, às quartas e aos sábados. Para adequar o número do concurso da Mega da Virada, que deve ter final 0 ou 5 foram criadas as Mega-Semanas que são exclusividade da Mega-Sena. Os sorteios ocorrem em datas predeterminadas ao longo do ano. Na ocasião são realizados três concursos semanais, às terças, quintas e sábados. Confira no cronograma de sorteio ou em Comunicados Importantes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card separline pb-4">
+        <div class="step-element d-flex">
+          <div class="step-wrapper pr-3">
+            <h3 class="step d-flex align-items-center justify-content-center"> 3 </h3>
+          </div>
+          <div class="step-text-content">
+            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">APOSTAS</h4>
+            <p class="mbr-step-text mbr-fonts-style display-7">A aposta mínima, de 6 números, custa R$ 4,50. Quanto mais números marcar, maior o preço da aposta e maiores as chances de faturar o prêmio mais cobiçado do país.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card separline pb-4">
+        <div class="step-element d-flex">
+          <div class="step-wrapper pr-3">
+            <h3 class="step d-flex align-items-center justify-content-center"> 4 </h3>
+          </div>
+          <div class="step-text-content">
+            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">RECEBIMENTO DE PRÊMIOS</h4>
+            <p class="mbr-step-text mbr-fonts-style display-7">Você pode receber seu prêmio em qualquer casa lotérica credenciada ou nas agências da Caixa. Caso o prêmio líquido seja superior a R$ 1.332,78 (bruto de R$ 1.903,98) o pagamento pode ser realizado somente nas agências da Caixa. Valores iguais ou acima de R$ 10.000,00 são pagos após 2 dias de sua apresentação na agência da Caixa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="step-element d-flex">
+          <div class="step-wrapper pr-3">
+            <h3 class="step d-flex align-items-center justify-content-center"> 5 </h3>
+          </div>
+          <div class="step-text-content">
+            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">ACUMULAÇÃO</h4>
+            <p class="mbr-step-text mbr-fonts-style display-7">Não havendo acertador em qualquer faixa, o valor acumula para o concurso seguinte, na respectiva faixa de premiação. Não deixe de conferir o seu bilhete de aposta.<br>Os prêmios prescrevem 90 dias após a data do sorteio. Após esse prazo, os valores são repassados ao tesouro nacional para aplicação no FIES - Fundo de Financiamento ao Estudante do Ensino Superior.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <h6 class="mbr-step-text mbr-fonts-style display-7">FONTE: Caixa Econômica Federal </h6>
+  </div>
+</section>
+<section class="mbr-section article content9 cid-s3waasUq3d" id="content9-1o">
+  <div class="container">
+    <div class="inner-container" style="width: 100%;">
+      <hr class="line" style="width: 25%;">
+      <div class="section-text align-center mbr-fonts-style display-7">O GERADOR DE APOSTA não tem ligação com o promotor dos sorteios, a Caixa Econômica Federal.<br>
+        Nosso intúito é ajudar a gerar os números que preencherão seus volantes.<br>
+        Ficamos aqui torcento para você ser um ganhador. </div>
+      <hr class="line" style="width: 25%;">
+    </div>
+  </div>
+</section>
+<section once="footers" class="cid-s3waatfoXj" id="footer6-1p">
+  <div class="container">
+    <div class="media-container-row align-center mbr-white">
+      <div class="col-12">
+        <p class="mbr-text mb-0 mbr-fonts-style display-7"> © Copyright 2020 GERADOR DE APOSTA - Todos os direitos reservados<br>
+          fale conosco: <a href="mailto:contato@geradordeaposta.com.br" class="text-success">contato@geradordeaposta.com.br</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="assets/web/assets/jquery/jquery.min.js"></script> 
+<script src="assets/popper/popper.min.js"></script> 
+<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"></script> 
+<script src="https://apis.google.com/js/plusone.js"></script> 
+<script src="assets/facebook-plugin/facebook-script.js"></script> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<script src="assets/smoothscroll/smooth-scroll.js"></script> 
+<script src="assets/dropdown/js/nav-dropdown.js"></script> 
+<script src="assets/dropdown/js/navbar-dropdown.js"></script> 
+<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script> 
+<script src="assets/parallax/jarallax.min.js"></script> 
+<script src="assets/tether/tether.min.js"></script> 
+<script src="assets/theme/js/script.js"></script> 
+</body>
+</html>
